@@ -1,0 +1,123 @@
+/* Color palette from your wireframe */
+:root {
+    --lavender: #D8B4FE;
+    --light-pink: #FFD6E8;
+    --mint-green: #D1F2D6;
+    --light-blue: #D6E8FF;
+    --dark-blue: #1D3557;
+    --white: #FFFFFF;
+}
+
+/* Type selector: overall page styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--white);
+    color: var(--dark-blue);
+    margin: 20px;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* ID selector: main heading */
+#main-title {
+    color: var(--dark-blue);
+    background-color: var(--lavender);
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px solid var(--dark-blue);
+    border-radius: 8px;
+}
+
+/* Class selector: introduction section */
+.intro {
+    background-color: var(--light-blue);
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px solid var(--lavender);
+    border-radius: 8px;
+}
+
+/* Navigation styling */
+nav {
+    background-color: var(--lavender);
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid var(--dark-blue);
+    border-radius: 8px;
+}
+
+nav a {
+    color: var(--dark-blue);
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    color: #7041A6;
+    text-decoration: underline;
+}
+
+/* Section styling */
+section {
+    background-color: var(--light-pink);
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px solid var(--lavender);
+    border-radius: 8px;
+}
+
+/* Project cards */
+.project {
+    background-color: var(--mint-green);
+    padding: 18px;
+    margin: 15px 0;
+    border: 2px solid #8ABF98;
+    border-radius: 8px;
+}
+
+/* Interest cards */
+.interest {
+    background-color: var(--light-blue);
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #A7C7F5;
+    border-radius: 10px;
+}
+
+/* Buttons and links */
+.button {
+    display: inline-block;
+    background-color: var(--lavender);
+    color: var(--dark-blue);
+    padding: 10px 18px;
+    margin: 10px 0;
+    border: 2px solid #9B72CF;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: var(--light-pink);
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid var(--dark-blue);
+    border-radius: 5px;
+    padding: 4px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--lavender);
+    color: var(--dark-blue);
+    text-align: center;
+    padding: 15px;
+    margin-top: 25px;
+    border-top: 2px solid var(--dark-blue);
+}
