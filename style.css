@@ -252,3 +252,64 @@ h1, h2, h3 {
     font-family: 'Playfair Display', serif;
 }
 
+/* Homework 2 responsive layout */
+
+* {
+    box-sizing: border-box;
+}
+
+.homework-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 24px auto;
+    padding: 16px;
+}
+
+.homework-card {
+    background-color: var(--light-blue);
+    border: 2px solid var(--lavender);
+    border-radius: 12px;
+    padding: 24px;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.homework-card h2 {
+    color: var(--dark-blue);
+    font-family: 'Playfair Display', serif;
+}
+
+.homework-card p {
+    line-height: 1.6;
+}
+
+/* Tablet layout: two columns */
+@media screen and (max-width: 768px) {
+    .homework-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+}
+
+/* Mobile layout: one column */
+@media screen and (max-width: 480px) {
+    .homework-container {
+        grid-template-columns: 1fr;
+        padding: 8px;
+        gap: 16px;
+    }
+
+    .homework-card {
+        padding: 16px;
+    }
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
